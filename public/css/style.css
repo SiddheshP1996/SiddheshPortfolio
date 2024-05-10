@@ -439,7 +439,7 @@ h2 span {
 
 .project .project-container .project-links {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .project .project-container .project-link .btn {
@@ -966,6 +966,11 @@ h2 span {
 
     .experience .details .experience-details {
         width: 100%;
+    }
+
+    .project .project-container .project-links {
+        background-color: white;
+        padding: 1rem;
     }
 
     .project-container .project-link {
