@@ -437,9 +437,9 @@ h2 span {
     height: 270px;
 }
 
-.project .project-container #project-links {
+.project .project-container .project-links {
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .project .project-container .project-link .btn {
@@ -468,8 +468,7 @@ h2 span {
 .certifications .box-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    flex-direction: column-reverse;
-    padding-left: 3rem;
+    padding-left: 1rem;
     background-color: white;
     object-fit: cover;
 }
@@ -974,8 +973,8 @@ h2 span {
         padding-left: 15%;
         position: relative;
         height: 150px;
-        margin-top: 5%;
-        margin-bottom: 15%;
+        margin-top: 10%;
+        margin-bottom: 22%;
     }
 
     .project .project-container .project-img-link:hover {
