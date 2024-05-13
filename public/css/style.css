@@ -934,7 +934,7 @@ h2 span {
 @media (max-width:400px) {
 
     .home .links a .btn {
-        margin: 0.1em;
+        margin: 0.5em 0;
     }
 
     .certifications .box-container .box h3 .btn {
