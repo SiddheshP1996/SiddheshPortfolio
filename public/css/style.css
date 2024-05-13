@@ -292,14 +292,15 @@ h2 span {
     padding: 1rem 0;
 }
 
-.home a .btn {
+.home .links a .btn {
     background: gainsboro;
     font-size: auto;
     padding: auto;
+    margin: 1em 1em;
     color: black;
 }
 
-.home a .btn:hover {
+.home .links a .btn:hover {
     transition: all 400ms;
     box-shadow: 0.1em 0.1em 1em blue;
 }
@@ -931,6 +932,10 @@ h2 span {
 }
 
 @media (max-width:400px) {
+
+    .home .links a .btn {
+        margin: 0.1em;
+    }
 
     .certifications .box-container .box h3 .btn {
         font-weight: normal;
