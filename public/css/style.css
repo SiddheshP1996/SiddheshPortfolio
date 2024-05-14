@@ -444,6 +444,7 @@ h2 span {
 .project .project-container .project-links {
     background-color: #AFDDE5;
     padding: 2rem;
+    margin: 0 0 6rem 0;
 }
 
 .project .project-container .project-link .btn {
@@ -529,6 +530,11 @@ h2 span {
 .certifications .box-container .box .btn:hover {
     transition: all 400ms;
     box-shadow: 0.1em 0.1em 1em blue;
+}
+
+#Contact {
+    min-height: 85vh;
+    padding: 1rem;
 }
 
 .contact .row {
@@ -709,11 +715,44 @@ h2 span {
         text-align: -webkit-left;
     }
 
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 span {
+        font-size: 3.8rem;
+    }
+
+    .home h2 {
+        font-size: 3.8rem;
+    }
+
+    .home h3 {
+        font-size: 3rem;
+    }
+
     .project-container .project-links {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-left: 5%;
         margin-top: 5%;
+    }
+
+    .project-container .project-link {
+        padding: 2rem 5rem;
+        margin: 4.5rem 0;
+        position: relative;
+        height: 300px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 290px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 290px;
     }
 
     .project .project-container .project-img-link .btn {
@@ -761,21 +800,37 @@ h2 span {
         padding: 6em;
     }
 
-    .project-container .project-link {
-        padding: 1rem;
-        padding-left: 25%;
-        position: relative;
-        height: 150px;
-        margin-top: 5%;
-        margin-bottom: 20%;
+    h1 {
+        font-size: 5.7rem;
     }
 
-    .project .project-container .project-link .btn {
-        display: block;
+    h2 span {
+        font-size: 4.7rem;
+    }
+
+    .home h2 {
+        font-size: 4.7rem;
+    }
+
+    .home h3 {
+        font-size: 3rem;
+    }
+
+    .project-container .project-link {
+        padding: 5rem 18rem;
+        margin: 4.5rem 0;
+        position: relative;
+        height: 270px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 250px;
     }
     
-    .project .project-container .project-link1 .btn {
-        display: block;
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 250px;
     }
 
     .project .project-container .project-img-link:hover {
@@ -802,28 +857,42 @@ h2 span {
         padding: 6em;
     }
 
+    h1 {
+        font-size: 5.3rem;
+    }
+
+    h2 span {
+        font-size: 5.3rem;
+    }
+
+    .home h2 {
+        font-size: 5.3rem;
+    }
+
+    .home h3 {
+        font-size: 5.3rem;
+    }
+
     .container {
         width: 100%;
         padding-left: 3rem;
     }
 
     .project-container .project-link {
-        padding: 1rem;
-        padding-left: 30%;
+        padding: 5rem 20rem;
+        margin: 2rem 0;
         position: relative;
-        height: 150px;
-        margin-top: 5%;
-        margin-bottom: 10%;
+        height: 260px;
     }
 
     .project .project-container .project-img-link {
-        padding: 1rem;
-        height: 150px;
+        padding: 1rem 0;
+        height: 210px;
     }
     
     .project .project-container .project-img-link1 {
-        padding: 1rem;
-        height: 150px;
+        padding: 1rem 0;
+        height: 210px;
     }
 
     .project .project-container .project-img-link:hover {
@@ -846,6 +915,22 @@ h2 span {
         padding: 6em;
     }
 
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 span {
+        font-size: 5rem;
+    }
+
+    .home h2 {
+        font-size: 5rem;
+    }
+
+    .home h3 {
+        font-size: 5rem;
+    }
+
     .about .row .info {
         display: flexbox;
     }
@@ -863,6 +948,23 @@ h2 span {
     .contact .row {
         display: flex;
         justify-content: flex-end;
+    }
+
+    .project-container .project-link {
+        padding: 3rem 15rem;
+        margin: 2rem 0;
+        position: relative;
+        height: 245px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 200px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 200px;
     }
 
     .project .project-container .project-img-link:hover {
@@ -887,7 +989,14 @@ h2 span {
 @media (max-width: 618px) {
 
     .home {
-        padding-top: 6em;
+        padding: 6em;
+    }
+
+    .home .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
     }
 
     h1 {
@@ -897,11 +1006,19 @@ h2 span {
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 3.3rem;
     }
 
     h2 span {
-        font-size: 4rem;
+        font-size: 3.3rem;
+    }
+
+    .home h2 {
+        font-size: 3.3rem;
+    }
+
+    .home h3 {
+        font-size: 3.3rem;
     }
 
     .about .row .info {
@@ -929,12 +1046,16 @@ h2 span {
     }
 
     .project-container .project-link {
-        padding: 1rem;
-        padding-left: 25%;
+        padding: 2rem 8rem;
         position: relative;
         height: 150px;
         margin-top: 5%;
         margin-bottom: 15%;
+    }
+
+    .project .project-container .project-links {
+        background-color: #AFDDE5;
+        padding: 1rem;
     }
 
     .project .project-container .project-img-link {
@@ -973,6 +1094,22 @@ h2 span {
 
     .home {
         padding: 3em;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    h2 span {
+        font-size: 2.7rem;
+    }
+
+    .home h2 {
+        font-size: 2.7rem;
+    }
+
+    .home h3 {
+        font-size: 2.7rem;
     }
 
     .home .links a .btn {
