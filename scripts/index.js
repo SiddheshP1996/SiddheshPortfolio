@@ -1,12 +1,8 @@
-// =========================== Windows Screen Scroller ===========================
-
 $(document).ready(function () {
 
   $('#menu').click(function () {
-
     $(this).toggleClass('fa-times');
     $('header').toggleClass('toggle');
-
   });
 
   $(window).on('scroll load', () => {
@@ -20,23 +16,29 @@ $(document).ready(function () {
       $('.top').hide();
     }
 
+    // Check if header is overlapping content
+    var headerHeight = $('header').outerHeight();
+    var mainOffset = $('main').offset().top;
+    if (headerHeight > mainOffset) {
+      $('header').css('z-index', '2');
+      $('main').css('z-index', '1');
+    } else {
+      $('header').css('z-index', '1');
+      $('main').css('z-index', '2');
+    }
+
   });
 
   // Smooth Scrolling 
-
   $('a[href*="#"]').on('click', (event) => {
-
     event.preventDefault();
-
     $('html, body').animate({
-
       scrollTop: $($(this).attr('href')).offset().top,
-
     }, 500, 'linear');
-
   });
 
 });
+
 
 // =========================== Text Typing ===========================
 

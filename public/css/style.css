@@ -154,8 +154,8 @@ header .navbar ul li a:hover {
 
 #menu {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5em;
+    right: 1.5em;
     background: #e8eaea;
     color: #81cae2;
     cursor: pointer;
@@ -281,8 +281,7 @@ h2 span {
 
 .progress-content {
     height: 21px;
-    background-color: lightblue;
-    width: 0%;
+    background-color: #7773e4;
     box-shadow: 0.1em 0.2em 1em blue;
 }
 
@@ -290,6 +289,10 @@ h2 span {
     font-size: 2rem;
     color: black;
     padding: 1rem 0;
+}
+
+.home .links {
+    padding: 0 4em;
 }
 
 .home .links a .btn {
@@ -577,8 +580,7 @@ h2 span {
 
 .contact .row form .btn {
     background: gainsboro;
-    font-size: auto;
-    padding: auto;
+    margin: 0 7em;
     color: black;
 }
 
@@ -731,6 +733,10 @@ h2 span {
         transform: scale(0.9);
     }
 
+    .contact .row form .btn {
+        margin: 0 7em;
+    }
+
 }
 
 @media (max-width:991px) {
@@ -752,7 +758,7 @@ h2 span {
     }
 
     .home {
-        padding-top: 6em;
+        padding: 6em;
     }
 
     .project-container .project-link {
@@ -780,6 +786,10 @@ h2 span {
         transform: scale(0.9);
     }
 
+    .contact .row form .btn {
+        margin: 0 5.3em;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -789,7 +799,7 @@ h2 span {
     }
 
     .home {
-        padding-top: 6em;
+        padding: 6em;
     }
 
     .container {
@@ -824,12 +834,16 @@ h2 span {
         transform: scale(0.9);
     }
 
+    .contact .row form .btn {
+        margin: 0 5.6em;
+    }
+
 }
 
 @media (max-width: 700px) {
 
     .home {
-        padding-top: 6em;
+        padding: 6em;
     }
 
     .about .row .info {
@@ -863,6 +877,10 @@ h2 span {
         display: flex;
         justify-content: center;
     }
+
+    .contact .row form .btn {
+        margin: 0 15em;
+    }
 }
 
 
@@ -883,7 +901,7 @@ h2 span {
     }
 
     h2 span {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .about .row .info {
@@ -945,16 +963,20 @@ h2 span {
         width: auto;
     }
 
+    .contact .row form .btn {
+        margin: 0 5em;
+    }
+
 }
 
 @media (max-width:400px) {
 
     .home {
-        padding-top: 6em;
+        padding: 3em;
     }
 
     .home .links a .btn {
-        margin: 0.5em 0;
+        margin: 0.5em 0.5em;
     }
 
     .certifications .box-container .box h3 .btn {
@@ -969,6 +991,10 @@ h2 span {
 
     .heading {
         margin: 0 3rem;
+    }
+
+    .home .links {
+        padding: 0 4em;
     }
 
     .about .info {
@@ -987,6 +1013,10 @@ h2 span {
     .container {
         width: 100%;
         padding-left: 3rem;
+    }
+
+    .experience .row {
+        padding: 2em;
     }
 
     .experience .details .experience-details {
@@ -1021,6 +1051,10 @@ h2 span {
 
     .contact .row form {
         margin: 3rem 0;
+    }
+
+    .contact .row form .btn {
+        margin: 0 6em;
     }
 
 }
