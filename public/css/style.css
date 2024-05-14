@@ -751,6 +751,10 @@ h2 span {
         padding: 0;
     }
 
+    .home {
+        padding-top: 6em;
+    }
+
     .project-container .project-link {
         padding: 1rem;
         padding-left: 25%;
@@ -782,6 +786,10 @@ h2 span {
 
     html {
         font-size: 50%;
+    }
+
+    .home {
+        padding-top: 6em;
     }
 
     .container {
@@ -820,6 +828,10 @@ h2 span {
 
 @media (max-width: 700px) {
 
+    .home {
+        padding-top: 6em;
+    }
+
     .about .row .info {
         display: flexbox;
     }
@@ -855,6 +867,10 @@ h2 span {
 
 
 @media (max-width: 618px) {
+
+    .home {
+        padding-top: 6em;
+    }
 
     h1 {
         font-weight: 900;
@@ -932,6 +948,10 @@ h2 span {
 }
 
 @media (max-width:400px) {
+
+    .home {
+        padding-top: 6em;
+    }
 
     .home .links a .btn {
         margin: 0.5em 0;
