@@ -44,7 +44,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: #AFDDE5;
+    background: black;
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -55,7 +55,7 @@ section {
 }
 
 .btn {
-    padding: 2rem;
+    padding: 1.5rem;
     cursor: pointer;
     font-size: 2rem;
     border-radius: 1rem;
@@ -72,7 +72,7 @@ section {
     font-size: 4rem;
     padding: 1rem;
     border-bottom: .1rem solid #fff4;
-    color: black;
+    color: whitesmoke;
 }
 
 .heading span {
@@ -87,8 +87,8 @@ header {
     left: 0;
     z-index: 1000;
     height: 100%;
-    width: 35rem;
-    background: #AFDDE5;
+    width: 38rem;
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,11 @@ header {
     text-align: center;
 }
 
-header .user img {
+.user {
+    margin: 0.3rem;
+}
+
+.user img {
     height: 18rem;
     width: 18rem;
     border-radius: 50%;
@@ -105,51 +109,52 @@ header .user img {
     border: .7rem solid #2e5aba;
 }
 
-header .user .name0 {
-    font-size: 2.5rem;
-    color: black;
+.user .name0 {
+    font-size: 3rem;
+    color: wheat;
 }
 
-header .user .name1 {
-    font-size: 1.5rem;
-    color: darkcyan;
+.user .name1 {
+    font-size: 2rem;
+    color: #d851e4;
 }
 
-header .user .role0 {
-    font-size: 1.5rem;
+.user .role0 {
+    font-size: 2rem;
     line-height: 2;
-    color: brown;
+    color: #def548;
     padding: 0;
 }
 
-header .user .role1 {
-    font-size: 1.5rem;
+.user .role1 {
+    font-size: 2rem;
     line-height: 2;
-    color: blue;
+    color: #2ef7aa;
     padding: 0;
 }
 
-header .navbar {
+.navbar {
     width: 100%;
 }
 
-header .navbar ul {
+.navbar ul {
     list-style: none;
     padding: 0.2rem 6rem;
 }
 
-header .navbar ul li a {
+.navbar ul li a {
     display: block;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 1.5rem 2.5em;
-    color: #040ca8;
+    background-color: #338bd3;
+    color: white;
     font-size: 2rem;
-    border-radius: 5rem;
+    border-radius: 2rem;
 }
 
-header .navbar ul li a:hover {
+.navbar ul li a:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em purple;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 #menu {
@@ -165,36 +170,58 @@ header .navbar ul li a:hover {
     display: none;
 }
 
+#menu:hover {
+    transition: all 400ms;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
+}
+
 .home {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15rem;
-    background-color: #AFDDE5;
+    margin: 0 1rem;
+    background-color: black;
+}
+
+#Home .home-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+#Home .home-data .home-image {
+    display: none;
+}
+
+#Home .home-data .home-image .image-home {
+    align-self: center;
+    width: 50vh;
+    border-radius: 10rem;
 }
 
 .home h3 {
     font-size: 3rem;
-    color: #3706ccf3;
+    color: #82e0b8;
 }
 
 .home h2 {
     font-size: 4rem;
-    color: black;
+    color: whitesmoke;
 }
 
 .home h2 span {
-    color: var(--yellow);
+    color: #da9ee1;
 }
 
 h1 {
     font-weight: 900;
     margin: 0.4em 0;
-    color: purple;
+    color: #f67e7d;
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 6.5rem;
 }
 
 h2 span {
@@ -210,7 +237,6 @@ h2 span {
     margin: 0 0 10px;
     overflow: hidden;
     padding-right: 0;
-    /* Separate bars from container */
 }
 
 .progress-title-holder {
@@ -221,7 +247,7 @@ h2 span {
     font-size: 15px;
     line-height: 15px;
     font-weight: 900;
-    color: #2e2e2e;
+    color: whitesmoke;
 }
 
 .progress-title {
@@ -236,7 +262,7 @@ h2 span {
 .progress-number-mark {
     margin-bottom: 4px;
     border-radius: 3px;
-    background-color: #edfe00;
+    background-color: #349be5;
     padding: 0 8px;
     position: absolute;
     bottom: 0;
@@ -257,7 +283,7 @@ h2 span {
     font-weight: 600;
     font-style: normal;
     text-transform: none;
-    color: #a05353;
+    color: #F7F7F7;
 }
 
 .down-arrow {
@@ -281,70 +307,104 @@ h2 span {
 
 .progress-content {
     height: 21px;
-    background-color: #7773e4;
-    box-shadow: 0.1em 0.2em 1em blue;
+    background-color: #239edc;
+    box-shadow: 0.1em 0.1em 1em #cf65ec;
 }
 
 .home p {
     font-size: 2rem;
-    color: black;
-    padding: 1rem 0;
+    color: #eed5a7;
+    padding-top: 5rem;
 }
 
 .home .links {
-    padding: 0 4em;
+    display: none;
 }
 
 .home .links a .btn {
-    background: gainsboro;
-    font-size: auto;
-    padding: auto;
+    background: #338bd3;
+    font-size: 2.5rem;
+    padding: 3rem;
     margin: 1em 1em;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 
 .home .links a .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .about .row {
     display: grid;
     padding: 1rem 0;
-    background-color: #AFDDE5;
+    background-color: black;
 }
 
 .about .info {
     padding: 2rem 1rem;
-    padding-left: 3rem;
+}
+
+.about .row .info .image {
+    display: flex;
+    height: 70vh;
+}
+
+.about .row .info .image .my-image {
+    height: 100%;
+    margin: auto;
+    padding: 2rem;
+    object-fit: contain;
+    border-radius: 10rem;
+}
+
+.about .row .info .data {
+    display: flex;
+    text-transform: none;
+}
+
+.about .row .info .data .my-data {
+    height: 100%;
+    margin: auto;
+    padding: 2rem;
 }
 
 .about .info h3 {
-    font-size: 2rem;
-    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: whitesmoke;
     padding: 1rem 0;
     font-weight: normal;
 }
 
-.about .info h3 span {
-    color: black;
-    padding: 0.5rem;
+.about .info .data .my-data .desc {
+    color: #4dd8d6;
+    padding: 1.5rem 0.5rem;
+    font-weight: bold;
+}
+
+.about .info h3 .desc {
+    color: #4dd8d6;
+    padding: 1.5rem 0.5rem;
+    margin: 0;
+    font-weight: bold;
 }
 
 .about .info .container {
-    padding: 1em 1.1em 2em;
+    margin: 2rem 5rem 0 0;
+    padding: 0 3em 2em 3em;
 }
 
 .about a .btn {
-    background: gainsboro;
-    font-size: auto;
-    padding: auto;
-    color: black;
+    background-color: #215cf2;
+    color: white;
+    font-weight: bold;
+    margin: 0 3.3rem;
 }
 
 .about a .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .about .counter {
@@ -360,33 +420,36 @@ h2 span {
 
 .about .counter .box {
     width: 20rem;
-    background: #a55ccc;
+    background: #4d72d8;
     text-align: center;
     padding: 2rem;
     margin: 2rem;
+    border-radius: 3rem;
 }
 
 .about .counter .box:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 2em rgb(43, 0, 255);
+    box-shadow: 0.1em 0.1em 2em #65ecea;
 }
 
 .about .counter .box span {
     font-size: 4rem;
-    color: #0ad3e9;
+    color: #0a2fe9;
+    font-weight: bold;
 }
 
 .about .counter .box h3 {
     font-size: 2rem;
-    color: #f4f415;
+    color: white;
+    font-weight: bold;
 }
 
 .experience .row {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    padding: 9rem;
-    background-color: #AFDDE5;
+    padding: 4rem 6rem;
+    background-color: black;
     font-size: 10px;
 }
 
@@ -396,8 +459,7 @@ h2 span {
 }
 
 .experience .row .details h3 {
-    font-size: 2rem;
-    color: black;
+    font-size: 3rem;
     padding: 1rem 0;
     font-weight: normal;
 }
@@ -405,14 +467,17 @@ h2 span {
 .experience-details em span {
     text-align: start;
     font-family: 'Tektur', cursive !important;
-    color: #0d8da1;
-    padding: 0.5rem;
+    color: #4ed7ec;
+    padding: 1rem 0;
 }
 
 .experience .row .details ul li {
-    list-style: square;
+    font-size: 2.1rem;
+    text-transform: none;
+    font-weight: bold;
+    list-style: circle;
     font-weight: normal;
-    color: black;
+    color: #39f7ab;
 }
 
 .project .row {
@@ -421,7 +486,7 @@ h2 span {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    background-color: #AFDDE5;
+    background-color: black;
 }
 
 .project-container #project-links {
@@ -442,40 +507,42 @@ h2 span {
 }
 
 .project .project-container .project-links {
-    background-color: #AFDDE5;
+    background-color: black;
     padding: 2rem;
     margin: 0 0 6rem 0;
 }
 
 .project .project-container .project-link .btn {
-    background: gainsboro;
+    background: #1381a2;
     width: auto;
-    color: purple;
+    color: white;
+    font-weight: bold;
 }
 
 .project .project-container .project-link .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .project .project-container .project-img-link:hover {
     transform: scale(1.1);
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .project .project-container .project-img-link1:hover {
     transform: scale(0.9);
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .certifications .box-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 1rem;
-    background-color: #AFDDE5;
+    background-color: black;
     object-fit: cover;
+    padding: 2rem;
+    margin: 1rem 6rem;
 }
 
 .certifications .box-container .box {
@@ -488,9 +555,9 @@ h2 span {
 
 .certifications .box-container .box span {
     font-weight: normal;
-    font-size: 1.3rem;
-    background: white;
-    color: purple;
+    font-size: 1.5rem;
+    background: #2297c6;
+    color: #f6eb1c;
     border-radius: 5rem;
     padding: .5rem 2.5rem;
 }
@@ -523,13 +590,14 @@ h2 span {
 }
 
 .certifications .box-container .box .btn {
-    background: gainsboro;
-    color: purple;
+    background: #4d72d8;
+    color: wheat;
+    font-weight: bold;
 }
 
 .certifications .box-container .box .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 #Contact {
@@ -543,13 +611,23 @@ h2 span {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #AFDDE5;
+    background-color: black;
 }
 
 .contact .row .content {
     flex: 1 1 30rem;
     padding: 4rem;
     padding-bottom: 0;
+}
+
+.contact .row .content .info1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+}
+
+.contact .row .content .location {
+    justify-self: center;
 }
 
 .contact .row form {
@@ -560,6 +638,7 @@ h2 span {
 }
 
 .contact .row form .box {
+    color: white;
     padding: 1.5rem;
     margin: 1rem 0;
     background: #3333;
@@ -571,12 +650,12 @@ h2 span {
 
 .contact .row form .box:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .contact .row form .box::placeholder {
     text-transform: capitalize;
-    color: black;
+    color: white;
 }
 
 .contact .row form .message {
@@ -585,19 +664,20 @@ h2 span {
 }
 
 .contact .row form .btn {
-    background: gainsboro;
+    background: #4d72d8;
     margin: 0 7em;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 
 .contact .row form .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em blue;
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .contact .row .content .title {
     text-transform: capitalize;
-    color: black;
+    color: orange;
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -607,14 +687,22 @@ h2 span {
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: black;
-    padding: 1rem 0;
+    color: white;
+    padding: 2rem;
     font-weight: normal;
 }
 
-.contact .row .content .info1 h3 i {
+.contact .row .content .info1 h3 .mail {
     padding-right: 1rem;
-    color: black;
+    color: skyblue;
+}
+.contact .row .content .info1 h3 .call {
+    padding-right: 1rem;
+    color: greenyellow;
+}
+.contact .row .content .info1 h3 .locate {
+    padding-right: 1rem;
+    color: red;
 }
 
 #socialFooter {
@@ -626,12 +714,13 @@ h2 span {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #AFDDE5;
+    background-color: black;
+    margin: 2rem;
 }
 
 .social .row .socialized {
     text-transform: capitalize;
-    color: black;
+    color: orange;
 }
 
 .social .row .socialized .grid-container {
@@ -643,18 +732,46 @@ h2 span {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
-    color: black;
+    color: white;
     padding: 1rem;
 }
 
 .social .row .socialized .info3 h3 .insta1:hover {
-    color: #0a42e9;
+    color: #458df2;
+    transition: all 400ms;
+    text-shadow: 0.1em 0.1em 1em white;
 }
 
 .social .row .socialized .info3 h3 .insta2:hover {
-    color: #e90a0a;
+    color: #e90ada;
+    transition: all 400ms;
+    text-shadow: 0.1em 0.1em 1em white;
 }
 
+.social .row .socialized .info3 h3 .insta3:hover {
+    color: black;
+    transition: all 400ms;
+    text-shadow: 0.1em 0.1em 1em white;
+}
+
+/* FOOTER */
+
+.foot {
+    text-align: center;
+    color: wheat;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.foot a {
+    text-transform: none;
+    color: #cd07f5;
+}
+
+.foot a:hover {
+    transition: all 400ms;
+    text-shadow: 0.1em 0.1em 1em #fd42fd;
+}
 
 /* Return to top */
 
@@ -704,10 +821,10 @@ h2 span {
 
 /* media queries  */
 
-@media (min-width:991px) {
+@media (min-width:1400px) {
 
     html {
-        font-size: 55%;
+        font-size: 60%;
     }
 
     .home {
@@ -716,15 +833,15 @@ h2 span {
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 7rem;
     }
 
     h2 span {
-        font-size: 3.8rem;
+        font-size: 4.8rem;
     }
 
     .home h2 {
-        font-size: 3.8rem;
+        font-size: 4.8rem;
     }
 
     .home h3 {
@@ -778,7 +895,151 @@ h2 span {
 
 }
 
-@media (max-width:991px) {
+@media (max-width:1400px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home {
+        padding: 1rem 4rem;
+        text-align: -webkit-left;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 span {
+        font-size: 4.8rem;
+    }
+
+    .home h2 {
+        font-size: 4.8rem;
+    }
+
+    .home h3 {
+        font-size: 3rem;
+    }
+
+    .project-container .project-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-container .project-link {
+        padding: 2rem 5rem;
+        margin: 4.5rem 0;
+        position: relative;
+        height: 200px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 200px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 200px;
+    }
+
+    .project .project-container .project-img-link .btn {
+        padding: 1rem;
+    }
+    
+    .project .project-container .project-img-link1 .btn {
+        padding: 1rem;
+    }
+
+    .project .project-container .project-img-link:hover {
+        transform: scale(0.9);
+    }
+    
+
+    .project .project-container .project-img-link1:hover {
+        transform: scale(0.9);
+    }
+
+    .contact .row form .btn {
+        margin: 0 7em;
+    }
+
+}
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home {
+        padding: 1rem 4rem;
+        text-align: -webkit-left;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 span {
+        font-size: 4.8rem;
+    }
+
+    .home h2 {
+        font-size: 4.8rem;
+    }
+
+    .home h3 {
+        font-size: 3rem;
+    }
+
+    .project-container .project-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-container .project-link {
+        padding: 2rem 5rem;
+        margin: 4.5rem 0;
+        position: relative;
+        height: 170px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 170px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 170px;
+    }
+
+    .project .project-container .project-img-link .btn {
+        padding: 1rem;
+    }
+    
+    .project .project-container .project-img-link1 .btn {
+        padding: 1rem;
+    }
+
+    .project .project-container .project-img-link:hover {
+        transform: scale(0.9);
+    }
+    
+
+    .project .project-container .project-img-link1:hover {
+        transform: scale(0.9);
+    }
+
+    .contact .row form .btn {
+        margin: 0 7em;
+    }
+
+}
+
+@media (max-width:992px) {
 
     header {
         left: -120%;
@@ -800,37 +1061,64 @@ h2 span {
         padding: 6em;
     }
 
+    #Home .home-data {
+        margin-top: 4rem;
+    }
+    
+    #Home .home-data .home-image {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    #Home .home-data .home-image .image-home {
+        align-content: center;
+        width: 50vh;
+        border-radius: 10rem;
+    }
+
+    .home .links {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 20px;
+    }
+
+    .home .links a .btn {
+        padding: 2rem;
+    }
+
     h1 {
         font-size: 5.7rem;
     }
 
     h2 span {
-        font-size: 4.7rem;
+        font-size: 4.1rem;
     }
 
     .home h2 {
-        font-size: 4.7rem;
+        font-size: 4.1rem;
     }
 
     .home h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .project-container .project-link {
-        padding: 5rem 18rem;
+        padding: 5rem 6rem;
         margin: 4.5rem 0;
         position: relative;
-        height: 270px;
+        height: 190px;
     }
 
     .project .project-container .project-img-link {
         padding: 1rem 0;
-        height: 250px;
+        height: 175px;
     }
     
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
-        height: 250px;
+        height: 175px;
     }
 
     .project .project-container .project-img-link:hover {
@@ -858,24 +1146,29 @@ h2 span {
     }
 
     h1 {
-        font-size: 5.3rem;
+        font-size: 5.4rem;
     }
 
     h2 span {
-        font-size: 5.3rem;
+        font-size: 4rem;
     }
 
     .home h2 {
-        font-size: 5.3rem;
+        font-size: 4rem;
     }
 
     .home h3 {
-        font-size: 5.3rem;
+        font-size: 3rem;
     }
 
     .container {
         width: 100%;
         padding-left: 3rem;
+    }
+
+    .project-container .project-links {
+        display: flex;
+        flex-direction: column;
     }
 
     .project-container .project-link {
@@ -920,24 +1213,33 @@ h2 span {
     }
 
     h2 span {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .home h2 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .home h3 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .about .row .info {
         display: flexbox;
     }
 
+    .about .row .info h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
     .about .counter {
         display: grid;
         position: relative;
+    }
+
+    .about .counter .box {
+        margin: 1rem;
     }
 
     .container {
@@ -986,10 +1288,14 @@ h2 span {
 }
 
 
-@media (max-width: 618px) {
+@media (max-width: 576px) {
 
     .home {
         padding: 6em;
+    }
+
+    #Home .home-data .home-image .image-home {
+        width: 30vh;
     }
 
     .home .links {
@@ -997,12 +1303,13 @@ h2 span {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
+        padding: 0;
     }
 
     h1 {
         font-weight: 900;
         margin: 0.4em 0;
-        color: purple;
+        color: lightsalmon;
     }
 
     h1 {
@@ -1010,141 +1317,55 @@ h2 span {
     }
 
     h2 span {
-        font-size: 3.3rem;
+        font-size: 2.9rem;
     }
 
     .home h2 {
-        font-size: 3.3rem;
+        font-size: 2.9rem;
     }
 
     .home h3 {
-        font-size: 3.3rem;
+        font-size: 2.4rem;
     }
 
     .about .row .info {
         display: flexbox;
     }
 
-    .about .counter {
+    .about .row .info .image {
         display: flex;
-        flex-direction: column;
-        padding-left: 25%;
-        padding-right: 25%;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        height: 40vh;
     }
-
-    .container {
-        width: 100%;
-        padding-left: 3rem;
-    }
-
-    .certifications .box-container .box h3 .btn {
-        font-weight: normal;
-        font-size: 2rem;
+    
+    .about .row .info .image .my-image {
+        height: 100%;
+        margin: auto;
         padding: 2rem;
     }
-
-    .project-container .project-link {
-        padding: 2rem 8rem;
-        position: relative;
-        height: 150px;
-        margin-top: 5%;
-        margin-bottom: 15%;
-    }
-
-    .project .project-container .project-links {
-        background-color: #AFDDE5;
-        padding: 1rem;
-    }
-
-    .project .project-container .project-img-link {
+    
+    .about .row .info .data {
         display: flex;
-        justify-content: flex-start;
-        padding: 1rem;
-        height: 150px;
+        text-transform: none;
     }
     
-    .project .project-container .project-img-link1 {
-        display: flex;
-        justify-content: flex-start;
-        padding: 1rem;
-        height: 150px;
-    }
-
-    .project .project-container .project-img-link:hover {
-        transform: scale(0.9);
-    }
-    
-    .project .project-container .project-img-link1:hover {
-        transform: scale(0.9);
-    }
-
-    .certifications .box-container .box {
-        width: auto;
-    }
-
-    .contact .row form .btn {
-        margin: 0 5em;
-    }
-
-}
-
-@media (max-width:400px) {
-
-    .home {
-        padding: 3em;
-    }
-
-    h1 {
-        font-size: 2.7rem;
-    }
-
-    h2 span {
-        font-size: 2.7rem;
-    }
-
-    .home h2 {
-        font-size: 2.7rem;
-    }
-
-    .home h3 {
-        font-size: 2.7rem;
+    .about .row .info .data .my-data {
+        height: 100%;
+        margin: auto;
+        padding: 2rem;
     }
 
     .home .links a .btn {
+        font-size: 2rem;
         margin: 0.5em 0.5em;
     }
 
-    .certifications .box-container .box h3 .btn {
-        font-weight: normal;
-        font-size: 2rem;
-        padding: 2rem;
-    }
-
-    header {
-        width: 100vw;
-    }
-
-    .heading {
-        margin: 0 3rem;
-    }
-
-    .home .links {
-        padding: 0 4em;
-    }
-
-    .about .info {
-        display: grid;
+    .about .row .info h3 {
+        font-size: 2.5rem;
     }
 
     .about .counter {
-        display: flex;
-        flex-direction: column;
-        padding-left: 20%;
-        padding-right: 15%;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .container {
@@ -1152,26 +1373,42 @@ h2 span {
         padding-left: 3rem;
     }
 
-    .experience .row {
-        padding: 2em;
+    .experience .row .details h3 {
+        font-size: 2.7rem;
     }
 
-    .experience .details .experience-details {
-        width: 100%;
+    .experience .row .details ul li {
+        font-size: 1.8rem;
     }
 
+    .certifications .box-container .box h3 .btn {
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    
     .project .project-container .project-links {
-        background-color: #AFDDE5;
-        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding: 0 5rem 0 2rem;
     }
 
     .project-container .project-link {
-        padding: 1rem;
-        padding-left: 15%;
+        padding: 2rem 6rem;
         position: relative;
-        height: 150px;
-        margin-top: 10%;
-        margin-bottom: 22%;
+        margin: 1rem 0 2rem;
+        height: 240px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 180px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 180px;
     }
 
     .project .project-container .project-img-link:hover {
@@ -1183,7 +1420,137 @@ h2 span {
     }
 
     .certifications .box-container {
+        display: block;
+        margin: 2rem;
+    }
+
+    .certifications .box {
+        display: block;
+        margin: 2rem;
+    }
+
+    .contact .row form .btn {
+        margin: 0 5em;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    
+    .certifications .box-container .box h3 .btn {
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    
+    header {
+        width: 100vw;
+    }
+    
+    .heading {
+        margin: 0 3rem;
+    }
+    
+    .home {
+        padding: 3em;
+    }
+
+    .home .links {
+        padding: 0 2em;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 span {
+        font-size: 2.5rem;
+    }
+
+    .home h2 {
+        font-size: 2.5rem;
+    }
+
+    .home h3 {
+        font-size: 1.9rem;
+    }
+
+    .home .links a .btn {
+        font-size: 2rem;
+        margin: 0.5em 0.5em;
+    }
+
+    .about .info {
+        display: grid;
+    }
+
+    .about .counter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about .counter .box {
+        padding: 2rem;
+    }
+
+    .container {
         width: 100%;
+        padding-left: 3rem;
+    }
+
+    .experience .row {
+        padding: 2em;
+    }
+
+    .experience .row .details h3 {
+        font-size: 2.5rem;
+    }
+
+    .experience .row .details ul li {
+        font-size: 1.8rem;
+    }
+
+    .experience .details .experience-details {
+        width: 100%;
+    }
+
+    .project .project-container .project-links {
+        background-color: black;
+        padding: 1rem;
+    }
+
+    .project-container .project-link {
+        position: relative;
+        padding: 1rem 4rem;
+        margin: 1rem 0 5rem;
+        height: 200px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 170px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 170px;
+    }
+
+    .project .project-container .project-img-link:hover {
+        transform: scale(0.9);
+    }
+    
+    .project .project-container .project-img-link1:hover {
+        transform: scale(0.9);
+    }
+
+    .certifications .box-container {
+        display: block;
+    }
+
+    .certifications .box {
+        display: block;
     }
 
     .contact .row form {
@@ -1192,6 +1559,13 @@ h2 span {
 
     .contact .row form .btn {
         margin: 0 6em;
+    }
+
+    .foot {
+        text-align: center;
+        color: wheat;
+        font-size: 1.5rem;
+        padding: 2rem;
     }
 
 }

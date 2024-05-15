@@ -1,3 +1,5 @@
+// =========================== Windows Scroller ===========================
+
 $(document).ready(function () {
 
   $('#menu').click(function () {
