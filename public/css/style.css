@@ -634,10 +634,9 @@ h2 span {
 }
 
 .contact .row form .box {
-    color: white;
+    background-color: #F7F7F7;
     padding: 1.5rem;
     margin: 1rem 0;
-    background: #3333;
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
@@ -651,7 +650,7 @@ h2 span {
 
 .contact .row form .box::placeholder {
     text-transform: capitalize;
-    color: white;
+    color: gray;
 }
 
 .contact .row form .message {
