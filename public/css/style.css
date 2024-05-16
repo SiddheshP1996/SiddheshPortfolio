@@ -142,7 +142,7 @@ header {
     display: block;
     padding: 1.5rem;
     margin: 1.5rem 2.5em;
-    background-color: #338bd3;
+    background-color: #215cf2;
     color: white;
     font-size: 1.7rem;
     border-radius: 2rem;
@@ -192,7 +192,7 @@ header {
 
 #Home .home-data .home-image .image-home {
     align-self: center;
-    width: 50vh;
+    width: 50%;
     border-radius: 10rem;
 }
 
@@ -258,7 +258,7 @@ h2 span {
 .progress-number-mark {
     margin-bottom: 4px;
     border-radius: 3px;
-    background-color: #349be5;
+    background-color: #215cf2;
     padding: 0 8px;
     position: absolute;
     bottom: 0;
@@ -303,7 +303,7 @@ h2 span {
 
 .progress-content {
     height: 21px;
-    background-color: #239edc;
+    background-color: #215cf2;
     box-shadow: 0.1em 0.1em 1em #cf65ec;
 }
 
@@ -318,7 +318,7 @@ h2 span {
 }
 
 .home .links a .btn {
-    background: #338bd3;
+    background: #215cf2;
     font-size: 2.5rem;
     padding: 3rem;
     margin: 1em 1em;
@@ -351,7 +351,7 @@ h2 span {
     margin: auto;
     padding: 2rem;
     object-fit: contain;
-    border-radius: 10rem;
+    border-radius: 5rem;
 }
 
 .about .row .info .data {
@@ -374,13 +374,13 @@ h2 span {
 }
 
 .about .info .data .my-data .desc {
-    color: #4dd8d6;
+    color: #215cf2;
     padding: 1.5rem 0.5rem;
     font-weight: bold;
 }
 
 .about .info h3 .desc {
-    color: #4dd8d6;
+    color: #215cf2;
     padding: 1.5rem 0.5rem;
     margin: 0;
     font-weight: bold;
@@ -409,14 +409,14 @@ h2 span {
     padding-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
-    gap: 5px;
+    gap: 0;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }
 
 .about .counter .box {
     width: 20rem;
-    background: #4d72d8;
+    background: #215cf2;
     text-align: center;
     padding: 2rem;
     margin: 2rem;
@@ -430,7 +430,7 @@ h2 span {
 
 .about .counter .box span {
     font-size: 4rem;
-    color: #0a2fe9;
+    color: white;
     font-weight: bold;
 }
 
@@ -508,8 +508,12 @@ h2 span {
     margin: 0 0 6rem 0;
 }
 
+.project .project-container .project-link {
+    text-align: center;
+}
+
 .project .project-container .project-link .btn {
-    background: #1381a2;
+    background: #215cf2;
     width: auto;
     color: white;
     font-weight: bold;
@@ -552,8 +556,8 @@ h2 span {
 .certifications .box-container .box span {
     font-weight: normal;
     font-size: 1.5rem;
-    background: #2297c6;
-    color: #f6eb1c;
+    background: #668ef3;
+    color: white;
     border-radius: 5rem;
     padding: .5rem 2.5rem;
 }
@@ -582,12 +586,12 @@ h2 span {
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background: #49bbe2;
+    background: #215cf2;
 }
 
 .certifications .box-container .box .btn {
-    background: #4d72d8;
-    color: wheat;
+    background: #215cf2;
+    color: white;
     font-weight: bold;
 }
 
@@ -624,6 +628,7 @@ h2 span {
 
 .contact .row .content .location {
     justify-self: center;
+    margin-left: 3rem;
 }
 
 .contact .row form {
@@ -659,7 +664,7 @@ h2 span {
 }
 
 .contact .row form .btn {
-    background: #4d72d8;
+    background: #215cf2;
     margin: 0 7em;
     color: white;
     font-weight: bold;
@@ -1068,8 +1073,8 @@ h2 span {
     
     #Home .home-data .home-image .image-home {
         align-content: center;
-        width: 50vh;
-        border-radius: 10rem;
+        width: 60%;
+        border-radius: 5rem;
     }
 
     .home .links {
@@ -1140,6 +1145,12 @@ h2 span {
         padding: 6em;
     }
 
+    #Home .home-data .home-image .image-home {
+        align-content: center;
+        width: 50%;
+        border-radius: 5rem;
+    }
+
     h1 {
         font-size: 5.4rem;
     }
@@ -1203,6 +1214,12 @@ h2 span {
         padding: 6em;
     }
 
+    #Home .home-data .home-image .image-home {
+        align-content: center;
+        width: 60%;
+        border-radius: 5rem;
+    }
+
     h1 {
         font-size: 5rem;
     }
@@ -1217,10 +1234,6 @@ h2 span {
 
     .home h3 {
         font-size: 3rem;
-    }
-
-    .about .row .info {
-        display: flexbox;
     }
 
     .about .row .info h3 {
@@ -1240,6 +1253,11 @@ h2 span {
     .container {
         width: 100%;
         padding-left: 3rem;
+    }
+
+    .about .info .container {
+        margin: 1rem 2rem 0 0;
+        padding: 0 1em 2em 1em;
     }
 
     .contact .row {
@@ -1290,7 +1308,8 @@ h2 span {
     }
 
     #Home .home-data .home-image .image-home {
-        width: 30vh;
+        width: 60%;
+        border-radius: 5rem;
     }
 
     .home .links {
@@ -1323,10 +1342,6 @@ h2 span {
         font-size: 2.4rem;
     }
 
-    .about .row .info {
-        display: flexbox;
-    }
-
     .about .row .info .image {
         display: flex;
         height: 40vh;
@@ -1355,7 +1370,7 @@ h2 span {
     }
 
     .about .row .info h3 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .about .counter {
@@ -1366,6 +1381,11 @@ h2 span {
     .container {
         width: 100%;
         padding-left: 3rem;
+    }
+
+    .about .info .container {
+        margin: 1rem 2rem 0 0;
+        padding: 0 1em 2em 1em;
     }
 
     .experience .row .details h3 {
@@ -1386,7 +1406,7 @@ h2 span {
         display: flex;
         flex-direction: column;
         background-color: black;
-        padding: 0 5rem 0 2rem;
+        padding: 0 0 0 2rem;
     }
 
     .project-container .project-link {
@@ -1431,13 +1451,6 @@ h2 span {
 }
 
 @media (max-width:400px) {
-
-    
-    .certifications .box-container .box h3 .btn {
-        font-weight: normal;
-        font-size: 2rem;
-        padding: 2rem;
-    }
     
     header {
         width: 100vw;
@@ -1449,6 +1462,12 @@ h2 span {
     
     .home {
         padding: 3em;
+    }
+
+    #Home .home-data .home-image .image-home {
+        align-content: center;
+        width: 70%;
+        border-radius: 5rem;
     }
 
     .home .links {
@@ -1480,9 +1499,14 @@ h2 span {
         display: grid;
     }
 
+    .about .row .info h3 {
+        font-size: 2rem;
+    }
+
     .about .counter {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0 0 0 -1rem;
     }
 
     .about .counter .box {
@@ -1492,6 +1516,11 @@ h2 span {
     .container {
         width: 100%;
         padding-left: 3rem;
+    }
+
+    .about .info .container {
+        margin: 1rem 2rem 0 0;
+        padding: 0 1em 2em 1em;
     }
 
     .experience .row {
@@ -1512,7 +1541,7 @@ h2 span {
 
     .project .project-container .project-links {
         background-color: black;
-        padding: 1rem;
+        padding: 0;
     }
 
     .project-container .project-link {
@@ -1543,9 +1572,20 @@ h2 span {
     .certifications .box-container {
         display: block;
     }
-
+    
     .certifications .box {
         display: block;
+    }
+
+    .certifications .box-container .box h3 .btn {
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .contact .row {
+        display: flex;
+        justify-content: center;
     }
 
     .contact .row form {
@@ -1554,6 +1594,375 @@ h2 span {
 
     .contact .row form .btn {
         margin: 0 6em;
+    }
+
+    .contact .row .content {
+        flex: 1 1 30rem;
+        padding: 2.5rem;
+    }
+
+    .foot {
+        text-align: center;
+        color: wheat;
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:370px) {
+    
+    header {
+        width: 100vw;
+    }
+    
+    .heading {
+        margin: 0 3rem;
+    }
+    
+    .home {
+        padding: 1em;
+    }
+
+    #Home .home-data .home-image .image-home {
+        align-content: center;
+        width: 70%;
+        border-radius: 5rem;
+    }
+
+    .home .links {
+        padding: 0 1em;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 span {
+        font-size: 2.1rem;
+    }
+
+    .home h2 {
+        font-size: 2.1rem;
+    }
+
+    .home h3 {
+        font-size: 1.6rem;
+    }
+
+    .home .links a .btn {
+        font-size: 2rem;
+        margin: 0.5em 0.5em;
+    }
+
+    .about .info {
+        display: grid;
+    }
+
+    .about .row .info .data .my-data {
+        height: 100%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .about .row .info h3 {
+        font-size: 2rem;
+    }
+
+    .about .counter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 0 0 -1rem;
+    }
+
+    .about .counter .box {
+        width: 17rem;
+        padding: 2rem;
+        margin: 10px;
+    }
+
+    .about .counter .box h3 {
+        font-size: 2rem;
+    }
+
+    .about .counter .box span {
+        font-size: 3rem;
+    }
+    
+    .container {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .about .info .container {
+        margin: 1rem 2rem 0 0;
+        padding: 0 1em 2em 1em;
+    }
+
+    .experience .row {
+        padding: 2em;
+    }
+
+    .experience .row .details h3 {
+        font-size: 2.5rem;
+    }
+
+    .experience .row .details ul li {
+        font-size: 1.8rem;
+    }
+
+    .experience .details .experience-details {
+        width: 100%;
+    }
+
+    .project .project-container .project-links {
+        background-color: black;
+        padding: 0;
+    }
+
+    .project-container .project-link {
+        position: relative;
+        padding: 1rem 2rem;
+        margin: 1rem 0 5rem;
+        height: 200px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 170px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 170px;
+    }
+
+    .project .project-container .project-img-link:hover {
+        transform: scale(0.9);
+    }
+    
+    .project .project-container .project-img-link1:hover {
+        transform: scale(0.9);
+    }
+
+    .certifications .box-container {
+        display: block;
+    }
+    
+    .certifications .box {
+        display: block;
+    }
+
+    .certifications .box-container .box h3 .btn {
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .contact .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
+    }
+
+    .contact .row form .btn {
+        margin: 0 6em;
+    }
+
+    .contact .row .content {
+        flex: 1 1 30rem;
+        padding: 2rem;
+    }
+
+    .contact .row .content .info1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .foot {
+        text-align: center;
+        color: wheat;
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:328px) {
+    
+    header {
+        width: 100vw;
+    }
+    
+    .heading {
+        margin: 0 3rem;
+    }
+    
+    .home {
+        padding: 1em;
+    }
+
+    #Home .home-data .home-image .image-home {
+        align-content: center;
+        width: 70%;
+        border-radius: 5rem;
+    }
+
+    .home .links {
+        padding: 0 1em;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 span {
+        font-size: 2.1rem;
+    }
+
+    .home h2 {
+        font-size: 2.1rem;
+    }
+
+    .home h3 {
+        font-size: 1.6rem;
+    }
+
+    .home .links a .btn {
+        font-size: 2rem;
+        margin: 0.5em 0.5em;
+    }
+
+    .about .info {
+        display: grid;
+    }
+
+    .about .row .info .data .my-data {
+        height: 100%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .about .row .info h3 {
+        font-size: 2rem;
+    }
+
+    .about .counter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 0 0 -1rem;
+    }
+
+    .about .counter .box {
+        width: 15rem;
+        padding: 2rem;
+        margin: 10px;
+    }
+
+    .about .counter .box h3 {
+        font-size: 2rem;
+    }
+
+    .about .counter .box span {
+        font-size: 3rem;
+    }
+    
+    .container {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .about .info .container {
+        margin: 1rem 2rem 0 0;
+        padding: 0 1em 2em 1em;
+    }
+
+    .experience .row {
+        padding: 2em;
+    }
+
+    .experience .row .details h3 {
+        font-size: 2.5rem;
+    }
+
+    .experience .row .details ul li {
+        font-size: 1.8rem;
+    }
+
+    .experience .details .experience-details {
+        width: 100%;
+    }
+
+    .project .project-container .project-links {
+        background-color: black;
+        padding: 0;
+    }
+
+    .project-container .project-link {
+        position: relative;
+        padding: 1rem 2rem;
+        margin: 1rem 0 5rem;
+        height: 200px;
+    }
+
+    .project .project-container .project-img-link {
+        padding: 1rem 0;
+        height: 160px;
+    }
+    
+    .project .project-container .project-img-link1 {
+        padding: 1rem 0;
+        height: 160px;
+    }
+
+    .project .project-container .project-img-link:hover {
+        transform: scale(0.9);
+    }
+    
+    .project .project-container .project-img-link1:hover {
+        transform: scale(0.9);
+    }
+
+    .certifications .box-container {
+        display: block;
+    }
+    
+    .certifications .box {
+        display: block;
+    }
+
+    .certifications .box-container .box h3 .btn {
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .contact .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact .row form {
+        margin: 2rem 0;
+    }
+
+    .contact .row form .btn {
+        margin: 0 1em;
+    }
+
+    .contact .row .content {
+        flex: 1 1 30rem;
+        padding: 1rem;
+    }
+
+    .contact .row .content .info1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
     }
 
     .foot {
