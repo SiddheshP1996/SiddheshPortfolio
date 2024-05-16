@@ -102,7 +102,7 @@ header {
     border-radius: 50%;
     object-fit: contain;
     margin-bottom: 1rem;
-    border: .7rem solid #2e5aba;
+    border: .7rem solid #215cf2;
 }
 
 .user .name0 {
@@ -158,7 +158,7 @@ header {
     top: 1.5em;
     right: 1.5em;
     background: #e8eaea;
-    color: #81cae2;
+    color: #215cf2;
     cursor: pointer;
     font-size: 2.5rem;
     padding: 1rem 1.5rem;
@@ -192,7 +192,7 @@ header {
 
 #Home .home-data .home-image .image-home {
     align-self: center;
-    width: 50%;
+    width: 50vh;
     border-radius: 10rem;
 }
 
@@ -351,7 +351,7 @@ h2 span {
     margin: auto;
     padding: 2rem;
     object-fit: contain;
-    border-radius: 5rem;
+    border-radius: 10rem;
 }
 
 .about .row .info .data {
@@ -374,13 +374,13 @@ h2 span {
 }
 
 .about .info .data .my-data .desc {
-    color: #215cf2;
+    color: #4dd8d6;
     padding: 1.5rem 0.5rem;
     font-weight: bold;
 }
 
 .about .info h3 .desc {
-    color: #215cf2;
+    color: #4dd8d6;
     padding: 1.5rem 0.5rem;
     margin: 0;
     font-weight: bold;
@@ -409,7 +409,7 @@ h2 span {
     padding-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
-    gap: 0;
+    gap: 5px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }
@@ -556,7 +556,7 @@ h2 span {
 .certifications .box-container .box span {
     font-weight: normal;
     font-size: 1.5rem;
-    background: #668ef3;
+    background: #7799ef;
     color: white;
     border-radius: 5rem;
     padding: .5rem 2.5rem;
@@ -628,7 +628,6 @@ h2 span {
 
 .contact .row .content .location {
     justify-self: center;
-    margin-left: 3rem;
 }
 
 .contact .row form {
@@ -1073,8 +1072,8 @@ h2 span {
     
     #Home .home-data .home-image .image-home {
         align-content: center;
-        width: 60%;
-        border-radius: 5rem;
+        width: 50vh;
+        border-radius: 10rem;
     }
 
     .home .links {
@@ -1145,12 +1144,6 @@ h2 span {
         padding: 6em;
     }
 
-    #Home .home-data .home-image .image-home {
-        align-content: center;
-        width: 50%;
-        border-radius: 5rem;
-    }
-
     h1 {
         font-size: 5.4rem;
     }
@@ -1214,12 +1207,6 @@ h2 span {
         padding: 6em;
     }
 
-    #Home .home-data .home-image .image-home {
-        align-content: center;
-        width: 60%;
-        border-radius: 5rem;
-    }
-
     h1 {
         font-size: 5rem;
     }
@@ -1234,6 +1221,10 @@ h2 span {
 
     .home h3 {
         font-size: 3rem;
+    }
+
+    .about .row .info {
+        display: flexbox;
     }
 
     .about .row .info h3 {
@@ -1253,11 +1244,6 @@ h2 span {
     .container {
         width: 100%;
         padding-left: 3rem;
-    }
-
-    .about .info .container {
-        margin: 1rem 2rem 0 0;
-        padding: 0 1em 2em 1em;
     }
 
     .contact .row {
@@ -1308,8 +1294,7 @@ h2 span {
     }
 
     #Home .home-data .home-image .image-home {
-        width: 60%;
-        border-radius: 5rem;
+        width: 30vh;
     }
 
     .home .links {
@@ -1342,6 +1327,10 @@ h2 span {
         font-size: 2.4rem;
     }
 
+    .about .row .info {
+        display: flexbox;
+    }
+
     .about .row .info .image {
         display: flex;
         height: 40vh;
@@ -1370,7 +1359,7 @@ h2 span {
     }
 
     .about .row .info h3 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     .about .counter {
@@ -1381,11 +1370,6 @@ h2 span {
     .container {
         width: 100%;
         padding-left: 3rem;
-    }
-
-    .about .info .container {
-        margin: 1rem 2rem 0 0;
-        padding: 0 1em 2em 1em;
     }
 
     .experience .row .details h3 {
@@ -1406,7 +1390,7 @@ h2 span {
         display: flex;
         flex-direction: column;
         background-color: black;
-        padding: 0 0 0 2rem;
+        padding: 0 5rem 0 2rem;
     }
 
     .project-container .project-link {
@@ -1451,6 +1435,13 @@ h2 span {
 }
 
 @media (max-width:400px) {
+
+    
+    .certifications .box-container .box h3 .btn {
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 2rem;
+    }
     
     header {
         width: 100vw;
@@ -1462,12 +1453,6 @@ h2 span {
     
     .home {
         padding: 3em;
-    }
-
-    #Home .home-data .home-image .image-home {
-        align-content: center;
-        width: 70%;
-        border-radius: 5rem;
     }
 
     .home .links {
@@ -1499,14 +1484,9 @@ h2 span {
         display: grid;
     }
 
-    .about .row .info h3 {
-        font-size: 2rem;
-    }
-
     .about .counter {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0 0 0 -1rem;
     }
 
     .about .counter .box {
@@ -1518,8 +1498,17 @@ h2 span {
         padding-left: 3rem;
     }
 
+    .about .row .info h3 {
+        font-size: 2rem;
+    }
+
+    .about .counter .box {
+        width: 15rem;
+        padding: 2rem;
+    }
+
     .about .info .container {
-        margin: 1rem 2rem 0 0;
+        margin: 2rem 5rem 0 0;
         padding: 0 1em 2em 1em;
     }
 
@@ -1541,7 +1530,7 @@ h2 span {
 
     .project .project-container .project-links {
         background-color: black;
-        padding: 0;
+        padding: 1rem;
     }
 
     .project-container .project-link {
@@ -1572,15 +1561,9 @@ h2 span {
     .certifications .box-container {
         display: block;
     }
-    
+
     .certifications .box {
         display: block;
-    }
-
-    .certifications .box-container .box h3 .btn {
-        font-weight: normal;
-        font-size: 2rem;
-        padding: 2rem;
     }
 
     .contact .row {
@@ -1594,11 +1577,6 @@ h2 span {
 
     .contact .row form .btn {
         margin: 0 6em;
-    }
-
-    .contact .row .content {
-        flex: 1 1 30rem;
-        padding: 2.5rem;
     }
 
     .foot {
