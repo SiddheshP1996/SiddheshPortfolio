@@ -1046,6 +1046,7 @@ h2 span {
 
     #menu {
         display: block;
+        position: fixed;
     }
 
     header.toggle {
@@ -1072,8 +1073,8 @@ h2 span {
     
     #Home .home-data .home-image .image-home {
         align-content: center;
-        width: 50vh;
-        border-radius: 10rem;
+        width: 30vh;
+        border-radius: 3rem;
     }
 
     .home .links {
@@ -1295,6 +1296,7 @@ h2 span {
 
     #Home .home-data .home-image .image-home {
         width: 30vh;
+        border-radius: 2rem;
     }
 
     .home .links {
@@ -1460,24 +1462,23 @@ h2 span {
     }
 
     h1 {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 
     h2 span {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .home h2 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .home h3 {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
 
-    .home .links a .btn {
-        font-size: 2rem;
-        margin: 0.5em 0.5em;
+    .home p {
+        font-size: 1.8rem;
     }
 
     .about .info {
@@ -1585,4 +1586,26 @@ h2 span {
         padding: 2rem;
     }
 
+}
+
+@media (max-width:339px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 span {
+        font-size: 1.5rem;
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+    }
+
+    .home h3 {
+        font-size: 1.1rem;
+    }
+
+    .home p {
+        font-size: 1.5rem;
+    }
 }
