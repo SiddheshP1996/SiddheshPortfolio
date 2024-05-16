@@ -1612,26 +1612,14 @@ h2 span {
 
 @media (max-width:370px) {
     
-    header {
-        width: 100vw;
-    }
-    
     .heading {
         margin: 0 3rem;
-    }
-    
-    .home {
-        padding: 1em;
     }
 
     #Home .home-data .home-image .image-home {
         align-content: center;
         width: 70%;
         border-radius: 5rem;
-    }
-
-    .home .links {
-        padding: 0 1em;
     }
 
     h1 {
@@ -1793,10 +1781,6 @@ h2 span {
 }
 
 @media (max-width:328px) {
-    
-    header {
-        width: 100vw;
-    }
     
     .heading {
         margin: 0 3rem;
