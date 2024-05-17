@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     // Check if header is overlapping content
     var headerHeight = $('header').outerHeight();
-    var mainOffset = $('main').offset().top;
+    var mainOffset = $('main').offset();
     if (headerHeight > mainOffset) {
       $('header').css('z-index', '2');
       $('main').css('z-index', '1');
