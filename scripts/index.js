@@ -1,3 +1,25 @@
+// =========================== Age Updation ===========================
+
+function calculateAge(birthDate) {
+  const birth = new Date(birthDate);
+  const today = new Date();
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDifference = today.getMonth() - birth.getMonth();
+  const dayDifference = today.getDate() - birth.getDate();
+
+  if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+      age--;
+  }
+
+  return age;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const birthDate = '2001-02-10'; // Replace with your birth date
+  const ageElement = document.getElementById('age');
+  ageElement.textContent = calculateAge(birthDate);
+});
+
 // =========================== Windows Scroller ===========================
 
 $(document).ready(function () {
