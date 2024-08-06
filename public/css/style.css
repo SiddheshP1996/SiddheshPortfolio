@@ -615,7 +615,7 @@ h2 span {
 
 .contact .row .content {
     flex: 1 1 30rem;
-    padding: 4rem;
+    padding: 2rem;
     padding-bottom: 0;
 }
 
@@ -631,7 +631,6 @@ h2 span {
 
 .contact .row form {
     flex: 1 1 45rem;
-    padding: 2rem;
     margin: 2rem;
     margin-bottom: 4rem;
 }
@@ -686,7 +685,7 @@ h2 span {
     align-items: center;
     font-size: 2rem;
     color: white;
-    padding: 2rem;
+    padding: 0.5rem;
     font-weight: normal;
 }
 
@@ -1430,7 +1429,7 @@ h2 span {
     }
 
     .contact .row form .btn {
-        margin: 0 5em;
+        margin: 0 8em;
     }
 
 }
@@ -1570,12 +1569,8 @@ h2 span {
         justify-content: center;
     }
 
-    .contact .row form {
-        margin: 3rem 0;
-    }
-
     .contact .row form .btn {
-        margin: 0 6em;
+        margin: 0 5em;
     }
 
     .foot {
