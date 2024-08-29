@@ -1,3 +1,36 @@
+// =========================== Dark Mode Toggle Button ===========================
+
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+  document.querySelector('header').classList.toggle('dark-mode');
+});
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+
+    // Save the current mode in local storage
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+// Check the saved theme from local storage and apply it
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeToggle').checked = true;
+    }
+}
+
+// Add event listener to the toggle button
+document.getElementById('darkModeToggle').addEventListener('change', toggleDarkMode);
+
+// Load the theme on page load
+loadTheme();
+
 // =========================== Age Updation ===========================
 
 function calculateAge(birthDate) {
@@ -175,4 +208,3 @@ $('#return-to-top').click(() => {
   }, 500);
 
 });
-

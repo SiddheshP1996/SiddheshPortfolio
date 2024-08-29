@@ -1,5 +1,7 @@
 :root {
     --yellow: #ae98f0;
+    --bg-white: #ffffff;
+    --bg-grey: #4c4949;
 }
 
 * {
@@ -44,7 +46,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: black;
+    background: #ffffff;
+    color: #000000;
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -88,12 +91,95 @@ header {
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    background-color: var(--bg-white);
+}
+
+header.dark-mode {
+    background-color: var(--bg-grey);
+}
+
+/* Dark Mode Toggle Button */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Toggle button style */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196f3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider .bi-sun,
+.slider .bi-moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.slider .bi-sun {
+    left: 10px;
+    color: #ffffff;
+    display: none;
+}
+
+.slider .bi-moon {
+    right: 10px;
+    color: #000000;
+    display: none;
+}
+
+input:checked+.slider .bi-sun {
+    display: block;
+}
+
+input:not(:checked)+.slider .bi-moon {
+    display: block;
 }
 
 .user img {
@@ -107,7 +193,7 @@ header {
 
 .user .name0 {
     font-size: 2.5rem;
-    color: wheat;
+    color: #dda743;
 }
 
 .user .name1 {
@@ -118,14 +204,14 @@ header {
 .user .role0 {
     font-size: 1.4rem;
     line-height: 2;
-    color: #def548;
+    color: #b97e3a;
     padding: 0;
 }
 
 .user .role1 {
     font-size: 2rem;
     line-height: 2;
-    color: #2ef7aa;
+    color: #05ce81;
     padding: 0;
 }
 
@@ -155,7 +241,7 @@ header {
 
 #menu {
     position: fixed;
-    top: 1.5em;
+    top: 2.5em;
     right: 1.5em;
     background: #e8eaea;
     color: #215cf2;
@@ -176,7 +262,6 @@ header {
     justify-content: center;
     flex-flow: column;
     margin: 0 1rem;
-    background-color: black;
 }
 
 #Home .home-data {
@@ -198,16 +283,16 @@ header {
 
 .home h3 {
     font-size: 3rem;
-    color: #82e0b8;
+    color: #9e5bf0;
 }
 
 .home h2 {
     font-size: 4rem;
-    color: whitesmoke;
+    color: #a363f2;
 }
 
 .home h2 span {
-    color: #da9ee1;
+    color: #2dc8ef;
 }
 
 h1 {
@@ -243,11 +328,11 @@ h2 span {
     font-size: 15px;
     line-height: 15px;
     font-weight: 900;
-    color: whitesmoke;
 }
 
 .progress-title {
     z-index: 100;
+    color: #268df5;
 }
 
 .progress-number-wrapper {
@@ -309,7 +394,7 @@ h2 span {
 
 .home p {
     font-size: 2rem;
-    color: #eed5a7;
+    color: #c88b18;
     padding-top: 5rem;
 }
 
@@ -331,10 +416,13 @@ h2 span {
     box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
+.about .heading em {
+    color: #9e9292;
+}
+
 .about .row {
     display: grid;
     padding: 1rem 0;
-    background-color: black;
 }
 
 .about .info {
@@ -367,19 +455,18 @@ h2 span {
 .about .info h3 {
     font-weight: bold;
     font-size: 2.2rem;
-    color: whitesmoke;
     padding: 1rem 0;
     font-weight: normal;
 }
 
 .about .info .data .my-data .desc {
-    color: #4dd8d6;
+    color: #3686f5;
     padding: 1.5rem 0.5rem;
     font-weight: bold;
 }
 
 .about .info h3 .desc {
-    color: #4dd8d6;
+    color: #3686f5;
     padding: 1.5rem 0.5rem;
     margin: 0;
     font-weight: bold;
@@ -416,6 +503,7 @@ h2 span {
 .about .counter .box {
     width: 20rem;
     background: #215cf2;
+    color: white;
     text-align: center;
     padding: 2rem;
     margin: 2rem;
@@ -429,13 +517,11 @@ h2 span {
 
 .about .counter .box span {
     font-size: 4rem;
-    color: white;
     font-weight: bold;
 }
 
 .about .counter .box h3 {
     font-size: 2rem;
-    color: white;
     font-weight: bold;
 }
 
@@ -444,7 +530,6 @@ h2 span {
     align-items: center;
     justify-content: center;
     padding: 4rem 6rem;
-    background-color: black;
     font-size: 10px;
 }
 
@@ -462,7 +547,7 @@ h2 span {
 .experience-details em span {
     text-align: start;
     font-family: 'Tektur', cursive !important;
-    color: #4ed7ec;
+    color: #168b9d;
     padding: 1rem 0;
 }
 
@@ -472,7 +557,6 @@ h2 span {
     font-weight: bold;
     list-style: circle;
     font-weight: normal;
-    color: #39f7ab;
 }
 
 .project .row {
@@ -481,7 +565,6 @@ h2 span {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    background-color: black;
 }
 
 .project-container #project-links {
@@ -502,7 +585,6 @@ h2 span {
 }
 
 .project .project-container .project-links {
-    background-color: black;
     padding: 2rem;
     margin: 0 0 6rem 0;
 }
@@ -538,7 +620,6 @@ h2 span {
 .certifications .box-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: black;
     object-fit: cover;
     padding: 2rem;
     margin: 1rem 6rem;
@@ -610,7 +691,6 @@ h2 span {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: black;
 }
 
 .contact .row .content {
@@ -636,13 +716,13 @@ h2 span {
 }
 
 .contact .row form .box {
-    background-color: #F7F7F7;
     padding: 1.5rem;
     margin: 1rem 0;
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
     border-radius: 1.3em;
+    box-shadow: 0.1em 0.1em 1em black;
 }
 
 .contact .row form .box:hover {
@@ -684,7 +764,6 @@ h2 span {
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: white;
     padding: 0.5rem;
     font-weight: normal;
 }
@@ -711,7 +790,6 @@ h2 span {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
     margin: 2rem;
 }
 
@@ -729,7 +807,7 @@ h2 span {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
-    color: white;
+    color: #215cf2;
     padding: 1rem;
 }
 
@@ -755,7 +833,6 @@ h2 span {
 
 .foot {
     text-align: center;
-    color: wheat;
     font-size: 2rem;
     padding: 2rem;
 }
@@ -1389,7 +1466,6 @@ h2 span {
     .project .project-container .project-links {
         display: flex;
         flex-direction: column;
-        background-color: black;
         padding: 0 5rem 0 2rem;
     }
 
@@ -1436,7 +1512,6 @@ h2 span {
 
 @media (max-width:400px) {
 
-    
     .certifications .box-container .box h3 .btn {
         font-weight: normal;
         font-size: 2rem;
@@ -1527,7 +1602,6 @@ h2 span {
     }
 
     .project .project-container .project-links {
-        background-color: black;
         padding: 1rem;
     }
 
@@ -1575,7 +1649,6 @@ h2 span {
 
     .foot {
         text-align: center;
-        color: wheat;
         font-size: 1.5rem;
         padding: 2rem;
     }
