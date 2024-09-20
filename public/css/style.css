@@ -1,5 +1,5 @@
 :root {
-    --yellow: #ae98f0;
+    --yellow: #bba9f1a1;
     --bg-white: #ffffff;
     --bg-grey: #4c4949;
 }
@@ -226,8 +226,8 @@ input:not(:checked)+.slider .bi-moon {
 
 .navbar ul li a {
     display: block;
-    padding: 1.5rem;
-    margin: 1.5rem 2.5em;
+    padding: 1.2rem;
+    margin: 1.2rem 2.2rem;
     background-color: #215cf2;
     color: white;
     font-size: 1.7rem;
@@ -332,7 +332,6 @@ h2 span {
 
 .progress-title {
     z-index: 100;
-    color: #268df5;
 }
 
 .progress-number-wrapper {
@@ -383,12 +382,12 @@ h2 span {
 
 .progress-content-outter {
     height: 12px;
-    background-color: #ffffff;
+    background-color: #bba9f1a1;
 }
 
 .progress-content {
     height: 21px;
-    background-color: #215cf2;
+    background-color: #688ef0;
     box-shadow: 0.1em 0.1em 1em #cf65ec;
 }
 
@@ -615,6 +614,11 @@ h2 span {
     transform: scale(0.9);
     transition: all 400ms;
     box-shadow: 0.1em 0.1em 1em #65ecea;
+}
+
+.project .project-container .link-icon {
+    font-size: 2rem;
+    color: white;
 }
 
 .certifications .box-container {
