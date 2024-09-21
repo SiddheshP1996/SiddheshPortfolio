@@ -64,6 +64,12 @@ section {
     border-radius: 1rem;
 }
 
+.projBtn {
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
 .btn i {
     padding: 0.5rem;
     font-size: 75%;
@@ -592,14 +598,14 @@ h2 span {
     text-align: center;
 }
 
-.project .project-container .project-link .btn {
+.project .project-container .project-link .projBtn {
     background: #215cf2;
     width: auto;
     color: white;
     font-weight: bold;
 }
 
-.project .project-container .project-link .btn:hover {
+.project .project-container .project-link .projBtn:hover {
     transition: all 400ms;
     box-shadow: 0.1em 0.1em 1em #65ecea;
 }
@@ -619,6 +625,10 @@ h2 span {
 .project .project-container .link-icon {
     font-size: 2rem;
     color: #76b5f8a1;
+}
+
+.project .project-container .link-icon:hover {
+    box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
 .certifications .box-container {
