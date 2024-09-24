@@ -118,8 +118,6 @@ body.dark-mode {
 /* Toggle button style */
 .toggle-container {
     position: fixed;
-    top: 20px;
-    right: 30px;
     display: flex;
     align-items: center;
 }
@@ -131,10 +129,9 @@ body.dark-mode {
 .slider {
     position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left: 11rem;
+    width: 50px;
+    height: 26px;
     background-color: #ccc;
     transition: 0.4s;
     border-radius: 34px;
@@ -143,8 +140,8 @@ body.dark-mode {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -152,16 +149,16 @@ body.dark-mode {
     border-radius: 50%;
 }
 
-input:checked+.slider {
-    background-color: #2196f3;
+input:checked + .slider {
+    background-color: #215cf2;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-.slider .bi-sun,
-.slider .bi-moon {
+.slider .bi-moon,
+.slider .bi-sun {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -169,22 +166,22 @@ input:checked+.slider:before {
 }
 
 .slider .bi-sun {
-    left: 10px;
+    left: 6px;
     color: #ffffff;
     display: none;
 }
 
 .slider .bi-moon {
-    right: 10px;
+    right: 6px;
     color: #000000;
     display: none;
 }
 
-input:checked+.slider .bi-sun {
+input:checked + .slider .bi-sun {
     display: block;
 }
 
-input:not(:checked)+.slider .bi-moon {
+input:not(:checked) + .slider .bi-moon {
     display: block;
 }
 
@@ -223,6 +220,7 @@ input:not(:checked)+.slider .bi-moon {
 
 .navbar {
     width: 100%;
+    padding: 1.25rem 0;
 }
 
 .navbar ul {
