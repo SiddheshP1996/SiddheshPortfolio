@@ -556,6 +556,15 @@ h2 span {
     padding: 1rem 0;
 }
 
+.experience .row .details .link-icon {
+    font-size: 2rem;
+    color: #76b5f8a1;
+}
+
+.experience .row .details .link-icon:hover {
+    box-shadow: 0.1em 0.1em 1em #65ecea;
+}
+
 .experience .row .details ul li {
     font-size: 2.1rem;
     text-transform: none;
@@ -786,10 +795,12 @@ h2 span {
     padding-right: 1rem;
     color: skyblue;
 }
+
 .contact .row .content .info1 h3 .call {
     padding-right: 1rem;
     color: greenyellow;
 }
+
 .contact .row .content .info1 h3 .locate {
     padding-right: 1rem;
     color: red;
@@ -954,7 +965,7 @@ h2 span {
         padding: 1rem 0;
         height: 290px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 290px;
@@ -963,7 +974,7 @@ h2 span {
     .project .project-container .project-img-link .btn {
         padding: 1rem;
     }
-    
+
     .project .project-container .project-img-link1 .btn {
         padding: 1rem;
     }
@@ -971,7 +982,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
 
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
@@ -1026,7 +1037,7 @@ h2 span {
         padding: 1rem 0;
         height: 200px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 200px;
@@ -1035,7 +1046,7 @@ h2 span {
     .project .project-container .project-img-link .btn {
         padding: 1rem;
     }
-    
+
     .project .project-container .project-img-link1 .btn {
         padding: 1rem;
     }
@@ -1043,7 +1054,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
 
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
@@ -1098,7 +1109,7 @@ h2 span {
         padding: 1rem 0;
         height: 170px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 170px;
@@ -1107,7 +1118,7 @@ h2 span {
     .project .project-container .project-img-link .btn {
         padding: 1rem;
     }
-    
+
     .project .project-container .project-img-link1 .btn {
         padding: 1rem;
     }
@@ -1115,7 +1126,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
 
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
@@ -1153,13 +1164,13 @@ h2 span {
     #Home .home-data {
         margin-top: 4rem;
     }
-    
+
     #Home .home-data .home-image {
         display: flex;
         justify-content: center;
         align-content: center;
     }
-    
+
     #Home .home-data .home-image .image-home {
         align-content: center;
         width: 30vh;
@@ -1204,7 +1215,7 @@ h2 span {
         padding: 1rem 0;
         height: 175px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 175px;
@@ -1213,7 +1224,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
     }
@@ -1271,7 +1282,7 @@ h2 span {
         padding: 1rem 0;
         height: 210px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 210px;
@@ -1280,7 +1291,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
     }
@@ -1352,7 +1363,7 @@ h2 span {
         padding: 1rem 0;
         height: 200px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 200px;
@@ -1361,7 +1372,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
     }
@@ -1426,18 +1437,18 @@ h2 span {
         display: flex;
         height: 30vh;
     }
-    
+
     .about .row .info .image .my-image {
         height: 100%;
         margin: auto;
         padding: 2rem;
     }
-    
+
     .about .row .info .data {
         display: flex;
         text-transform: none;
     }
-    
+
     .about .row .info .data .my-data {
         height: 100%;
         margin: auto;
@@ -1476,7 +1487,7 @@ h2 span {
         font-size: 2rem;
         padding: 2rem;
     }
-    
+
     .project .project-container .project-links {
         display: flex;
         flex-direction: column;
@@ -1494,7 +1505,7 @@ h2 span {
         padding: 1rem 0;
         height: 180px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 180px;
@@ -1503,7 +1514,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
     }
@@ -1531,15 +1542,15 @@ h2 span {
         font-size: 2rem;
         padding: 2rem;
     }
-    
+
     header {
         width: 100vw;
     }
-    
+
     .heading {
         margin: 0 3rem;
     }
-    
+
     .home {
         padding: 3em;
     }
@@ -1630,7 +1641,7 @@ h2 span {
         padding: 1rem 0;
         height: 170px;
     }
-    
+
     .project .project-container .project-img-link1 {
         padding: 1rem 0;
         height: 170px;
@@ -1639,7 +1650,7 @@ h2 span {
     .project .project-container .project-img-link:hover {
         transform: scale(0.9);
     }
-    
+
     .project .project-container .project-img-link1:hover {
         transform: scale(0.9);
     }
