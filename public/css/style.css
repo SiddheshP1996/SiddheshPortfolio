@@ -1,6 +1,6 @@
 :root {
     --yellow: #bba9f1a1;
-    --bg-white: #ffffff;
+    --bg-white: #ddedf4;
     --bg-grey: #4c4949;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 1rem;
 }
 
@@ -103,6 +103,7 @@ header {
     flex-flow: column;
     text-align: center;
     background-color: var(--bg-white);
+    transition: left 0.5s ease-in-out;
 }
 
 header.dark-mode {
@@ -111,7 +112,7 @@ header.dark-mode {
 
 /* Dark Mode Toggle Button */
 body.dark-mode {
-    background-color: #121212;
+    background-color: #2e2e2e;
     color: #ffffff;
 }
 
@@ -130,8 +131,8 @@ body.dark-mode {
     position: absolute;
     cursor: pointer;
     left: 11rem;
-    width: 50px;
-    height: 26px;
+    width: 60px;
+    height: 28px;
     background-color: #ccc;
     transition: 0.4s;
     border-radius: 34px;
@@ -142,7 +143,7 @@ body.dark-mode {
     content: "";
     height: 20px;
     width: 20px;
-    left: 4px;
+    left: 6px;
     bottom: 4px;
     background-color: white;
     transition: 0.4s;
@@ -243,6 +244,13 @@ input:not(:checked) + .slider .bi-moon {
     box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .navbar ul li a:hover {
+        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+    }
+}
+
 #menu {
     position: fixed;
     top: 2.5em;
@@ -337,6 +345,23 @@ h2 span {
 .progress-title {
     z-index: 100;
 }
+
+.data-libraries {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.data-libraries li {
+    display: flex;
+    align-items: center;
+}
+
+.data-libraries li img {
+    margin-left: 5px;
+}
+
 
 .progress-number-wrapper {
     width: 100%;
@@ -455,20 +480,14 @@ h2 span {
     padding: 2rem;
 }
 
-.about .info h3 {
+.about .info p {
     font-weight: bold;
     font-size: 2.2rem;
     padding: 1rem 0;
     font-weight: normal;
 }
 
-.about .info .data .my-data .desc {
-    color: #3686f5;
-    padding: 1.5rem 0.5rem;
-    font-weight: bold;
-}
-
-.about .info h3 .desc {
+.about .info p .desc {
     color: #3686f5;
     padding: 1.5rem 0.5rem;
     margin: 0;
@@ -476,20 +495,27 @@ h2 span {
 }
 
 .about .info .container {
-    margin: 2rem 5rem 0 0;
-    padding: 0 3em 2em 3em;
+    margin: 1rem 4rem 0 0;
+    padding: 0 1em 1em 1em;
 }
 
 .about a .btn {
     background-color: #215cf2;
     color: white;
     font-weight: bold;
-    margin: 0 3.3rem;
+    margin: 0 1.3rem;
 }
 
 .about a .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em #65ecea;
+    box-shadow: 0.1em 0.1em 2em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .about a .btn:hover {
+        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 .about .counter {
@@ -515,7 +541,14 @@ h2 span {
 
 .about .counter .box:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 2em #65ecea;
+    box-shadow: 0.1em 0.1em 4em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .about .counter .box:hover {
+        box-shadow: 0.1em 0.2em 4em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 .about .counter .box span {
@@ -556,11 +589,18 @@ h2 span {
 
 .experience .row .details .link-icon {
     font-size: 2rem;
-    color: #76b5f8a1;
+    color: #3388e3a1;
 }
 
 .experience .row .details .link-icon:hover {
     box-shadow: 0.1em 0.1em 1em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .experience .row .details .link-icon:hover {
+        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 .experience .row .details ul li {
@@ -617,10 +657,24 @@ h2 span {
     box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .project .project-container .project-link .projBtn:hover {
+        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+    }
+}
+
 .project .project-container .project-img-link:hover {
     transform: scale(1.1);
     transition: all 400ms;
     box-shadow: 0.1em 0.1em 1em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .project .project-container .project-img-link:hover {
+        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 .project .project-container .project-img-link1:hover {
@@ -629,13 +683,27 @@ h2 span {
     box-shadow: 0.1em 0.1em 1em #65ecea;
 }
 
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .project .project-container .project-img-link1:hover {
+        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+    }
+}
+
 .project .project-container .link-icon {
     font-size: 2rem;
-    color: #76b5f8a1;
+    color: #3388e3a1;
 }
 
 .project .project-container .link-icon:hover {
     box-shadow: 0.1em 0.1em 1em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .project .project-container .link-icon:hover {
+        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 .certifications .box-container {
@@ -698,11 +766,18 @@ h2 span {
 
 .certifications .box-container .box .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em #65ecea;
+    box-shadow: 0.1em 0.1em 3em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .certifications .box-container .box .btn:hover {
+        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 #Contact {
-    min-height: 85vh;
+    min-height: 70vh;
     padding: 1rem;
 }
 
@@ -748,7 +823,14 @@ h2 span {
 
 .contact .row form .box:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em #65ecea;
+    box-shadow: 0.1em 0.1em 3em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .contact .row form .box:hover {
+        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 .contact .row form .box::placeholder {
@@ -770,7 +852,14 @@ h2 span {
 
 .contact .row form .btn:hover {
     transition: all 400ms;
-    box-shadow: 0.1em 0.1em 1em #65ecea;
+    box-shadow: 0.1em 0.1em 2em #65ecea;
+}
+
+/* Light mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .contact .row form .btn:hover {
+        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+    }
 }
 
 .contact .row .content .title {
@@ -835,7 +924,7 @@ h2 span {
 }
 
 .social .row .socialized .info3 h3 .insta1:hover {
-    color: #458df2;
+    color: #215cf2;
     transition: all 400ms;
     text-shadow: 0.1em 0.1em 1em white;
 }
@@ -1259,11 +1348,6 @@ h2 span {
         font-size: 3rem;
     }
 
-    .container {
-        width: 100%;
-        padding-left: 3rem;
-    }
-
     .project-container .project-links {
         display: flex;
         flex-direction: column;
@@ -1338,11 +1422,6 @@ h2 span {
 
     .about .counter .box {
         margin: 1rem;
-    }
-
-    .container {
-        width: 100%;
-        padding-left: 3rem;
     }
 
     .contact .row {
@@ -1436,30 +1515,9 @@ h2 span {
         height: 30vh;
     }
 
-    .about .row .info .image .my-image {
-        height: 100%;
-        margin: auto;
-        padding: 2rem;
-    }
-
     .about .row .info .data {
         display: flex;
         text-transform: none;
-    }
-
-    .about .row .info .data .my-data {
-        height: 100%;
-        margin: auto;
-        padding: 2rem;
-    }
-
-    .home .links a .btn {
-        font-size: 2rem;
-        margin: 0.5em 0.5em;
-    }
-
-    .about .row .info h3 {
-        font-size: 2.5rem;
     }
 
     .about .counter {
@@ -1468,8 +1526,7 @@ h2 span {
     }
 
     .container {
-        width: 100%;
-        padding-left: 3rem;
+        width: 93%;
     }
 
     .experience .row .details h3 {
@@ -1590,11 +1647,6 @@ h2 span {
         padding: 2rem;
     }
 
-    .container {
-        width: 100%;
-        padding-left: 3rem;
-    }
-
     .about .row .info h3 {
         font-size: 2rem;
     }
@@ -1603,9 +1655,8 @@ h2 span {
         padding: 2rem;
     }
 
-    .about .info .container {
-        margin: 2rem 5rem 0 0;
-        padding: 0 3em 2em 0em;
+    .container {
+        width: 90%;;
     }
 
     .experience .row {
@@ -1667,7 +1718,7 @@ h2 span {
     }
 
     .contact .row form .btn {
-        margin: 0 5em;
+        margin: 0 6em;
     }
 
     .foot {
@@ -1697,5 +1748,9 @@ h2 span {
 
     .home p {
         font-size: 1.5rem;
+    }
+
+    .container {
+        width: 90%;
     }
 }

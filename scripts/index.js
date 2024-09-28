@@ -77,7 +77,7 @@ function calculateAge(birthDate) {
 document.addEventListener("DOMContentLoaded", function () {
   const birthDate = "2001-02-10"; // Replace with your birth date
   const ageElement = document.getElementById("age");
-  ageElement.textContent = calculateAge(birthDate);
+  ageElement.innerHTML = calculateAge(birthDate);
 });
 
 // =========================== Windows Scroller ===========================
@@ -148,10 +148,10 @@ TxtRotate.prototype.tick = function () {
   this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
   var that = this;
-  var delta = 150 - Math.random() * 100;
+  var delta = 140 - Math.random() * 100;
 
   if (this.isDeleting) {
-    delta /= 2;
+    delta /= 4;
   }
 
   if (!this.isDeleting && this.txt === fullTxt) {
