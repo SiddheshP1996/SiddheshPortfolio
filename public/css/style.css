@@ -1526,7 +1526,7 @@ h2 span {
     }
 
     .container {
-        width: 93%;
+        width: 100%;
     }
 
     .experience .row .details h3 {
@@ -1656,7 +1656,7 @@ h2 span {
     }
 
     .container {
-        width: 90%;;
+        width: 100%;;
     }
 
     .experience .row {
@@ -1751,6 +1751,6 @@ h2 span {
     }
 
     .container {
-        width: 90%;
+        width: 100%;
     }
 }
