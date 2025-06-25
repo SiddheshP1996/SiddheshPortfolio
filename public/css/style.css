@@ -653,11 +653,11 @@ h2 span {
 
 .project .project-container .project-link {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
 }
 
 .project .project-container .project-link .proj-icon-link-style {
-    color: #f6b532;
+    color: #215cf2;
     font-size: 2rem;
     padding-right: 1rem;
     font-weight: 400;
@@ -898,8 +898,9 @@ h2 span {
     padding-bottom: 2rem;
 }
 
-.contact .row .content .info1 h3 {
+.contact .row .content .info1 h3 a {
     text-transform: none;
+    color: #215cf2;
     display: flex;
     align-items: center;
     font-size: 2rem;
