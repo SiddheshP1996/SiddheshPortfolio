@@ -77,7 +77,9 @@ function calculateAge(birthDate) {
 document.addEventListener("DOMContentLoaded", function () {
   const birthDate = "2001-02-10"; // Replace with your birth date
   const ageElement = document.getElementById("age");
-  ageElement.innerHTML = calculateAge(birthDate);
+  if (ageElement) {
+    ageElement.innerHTML = calculateAge(birthDate);
+  }
 });
 
 // =========================== Windows Scroller ===========================

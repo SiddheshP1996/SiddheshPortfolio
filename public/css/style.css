@@ -150,11 +150,11 @@ body.dark-mode {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #215cf2;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(26px);
 }
 
@@ -178,11 +178,11 @@ input:checked + .slider:before {
     display: none;
 }
 
-input:checked + .slider .bi-sun {
+input:checked+.slider .bi-sun {
     display: block;
 }
 
-input:not(:checked) + .slider .bi-moon {
+input:not(:checked)+.slider .bi-moon {
     display: block;
 }
 
@@ -247,7 +247,8 @@ input:not(:checked) + .slider .bi-moon {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .navbar ul li a:hover {
-        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 2em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -514,7 +515,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .about a .btn:hover {
-        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 2em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -547,7 +549,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .about .counter .box:hover {
-        box-shadow: 0.1em 0.2em 4em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.2em 4em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -592,6 +595,12 @@ h2 span {
     color: #3388e3a1;
 }
 
+.experience .row .tie-link {
+    color: #5176e6;
+    text-decoration: none;
+    font-family: 'Tektur', cursive !important;
+}
+
 .experience .row .details .link-icon:hover {
     box-shadow: 0.1em 0.1em 1em #65ecea;
 }
@@ -599,7 +608,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .experience .row .details .link-icon:hover {
-        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 3em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -643,6 +653,18 @@ h2 span {
 
 .project .project-container .project-link {
     text-align: center;
+    margin-bottom: 6rem;
+}
+
+.project .project-container .project-link .proj-icon-link-style {
+    color: #f6b532;
+    font-size: 2rem;
+    padding-right: 1rem;
+    font-weight: 400;
+}
+
+.project .project-container .project-link .proj-icon-link-style.dark-mode {
+    color: #ffffff;
 }
 
 .project .project-container .project-link .projBtn {
@@ -660,7 +682,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .project .project-container .project-link .projBtn:hover {
-        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 2em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -673,7 +696,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .project .project-container .project-img-link:hover {
-        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 3em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -686,7 +710,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .project .project-container .project-img-link1:hover {
-        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 3em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -702,7 +727,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .project .project-container .link-icon:hover {
-        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 2em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -772,7 +798,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .certifications .box-container .box .btn:hover {
-        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 3em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -829,7 +856,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .contact .row form .box:hover {
-        box-shadow: 0.1em 0.1em 3em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 3em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -858,7 +886,8 @@ h2 span {
 /* Light mode adjustment */
 @media (prefers-color-scheme: dark) {
     .contact .row form .btn:hover {
-        box-shadow: 0.1em 0.1em 2em #215cf2; /* Change to a darker color for light mode */
+        box-shadow: 0.1em 0.1em 2em #215cf2;
+        /* Change to a darker color for light mode */
     }
 }
 
@@ -1656,7 +1685,8 @@ h2 span {
     }
 
     .container {
-        width: 100%;;
+        width: 100%;
+        ;
     }
 
     .experience .row {
