@@ -42,7 +42,7 @@
 <h3>Prerequisites</h3>
 <p>This project requires the following dependencies:</p>
 <ul class="list-disc pl-4 my-0">
-<li class="my-0"><strong>Programming Language:</strong> HTML</li>
+<li class="my-0"><strong>Programming Language:</strong> HTML, CSS, JavaScript</li>
 </ul>
 <h3>Installation</h3>
 <p>Build SiddheshPortfolio from the source and install dependencies:</p>
