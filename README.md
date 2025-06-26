@@ -1,5 +1,11 @@
 # SiddheshPortfolio
 
+<ul>
+  <li>
+    <a href="https://siddheshp1996.github.io/SiddheshPortfolio/" target="_blank">Live Website</a>
+  </li>
+</ul>
+
 <div class="border border-border rounded-lg bg-background p-6 shadow-sm"><div class="prose prose-sm md:prose-base lg:prose-lg max-w-none prose-headings:font-bold prose-a:text-blue-600" style="user-select: none;"><div id="top" class="">
 
 <div align="center" class="text-center">
@@ -73,10 +79,4 @@
 <hr>
 <div align="left" class=""><a href="#top">⬆ Return</a></div>
 <hr></div></div></div>
-
-<ul>
-  <li>
-    <a href="https://siddheshp1996.github.io/SiddheshPortfolio/" target="_blank">Live Website</a>
-  </li>
-</ul>
 
